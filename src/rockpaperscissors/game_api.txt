@@ -1,0 +1,195 @@
+// Game Script API
+// This header file is to be included in game scripts only!
+
+#ifndef _GAME_API_H
+#define _GAME_API_H
+
+#include <stdio.h>
+#include <pthread.h>
+
+#include "util.h"
+
+typedef enum GAME_ERROR {
+
+	SUCCESS,
+
+	INDEX_OUT_OF_RANGE,
+
+} GAME_ERROR;
+
+typedef enum PLAYER_ERROR {
+
+	// No errors are or were discovered with the player
+	INNOCENT,
+
+	// The process exits early and it's exit code is not 0.
+	RUNTIME,
+
+	// The process exits early and it's exit code is 0.
+	EARLY_EXIT,
+
+	// The in or out player pipe is closed.
+	WHAAAT,
+
+	// The output from the player was out of range.
+	OUT_OF_RANGE,
+
+	// The output from the player was in the wrong format.
+	WRONG_FORMAT,
+
+	// The player ran out of time before it could output a single line.
+	TIMEOUT,
+
+	OTHER
+} PLAYER_ERROR;
+
+typedef enum PLAYER_STATUS {
+
+	PLAYER_STATUS_STOPPED,
+
+	PLAYER_STATUS_PROCESS_RUNNING,
+
+	PLAYER_STATUS_THREAD_RUNNING,
+
+	PLAYER_STATUS_RUNNING
+
+} PLAYER_STATUS;
+
+// Player Instance
+// Holds information necessary for running a player process
+// in a game. This is used for holding information for game scripts.
+typedef struct {
+
+	// Flag for seeing if the player is currently active
+	char active;
+
+	// Process Id of the player process
+	int pid;
+
+	// Input and output file descriptors for the process
+	int fd_in, fd_out;
+
+	// Input and output streams for the process
+	FILE *in, *out;
+
+	// The name of the player
+	char *name;
+
+	// The score of the player at the end of a game
+	int score;
+
+	// The error code, if any, that the player process performs
+	int error;
+
+	// Internal buffer used to store the input of the player whenever the
+	// last read call was called on this player instance.
+	char buffer[256];
+
+	// The amount of time allotted to this player, preferably based on programming language.
+	// Measured in milliseconds.
+	int timeout;
+
+	// Holds the thread in charge of sending and receiving data in the correct timeframe
+	pthread_t thread;
+
+	// General lock for changing or accessing non-thread-safe player information
+	pthread_mutex_t lock;
+
+	// Keeps the player's thread on stand by so that we can avoid allocating new threads
+	pthread_mutex_t run_lock;
+
+	// Prevents the player's data from being read until the process returns or the timeout
+	// expires.
+	pthread_mutex_t read_lock;
+
+	// Total number of microseconds spent between receiving data and returning output.
+	long long totalResponseTime;
+
+	// Total number of "round trips" of data for the player
+	long long numberOfResponses;
+
+} player_t;
+
+// Writes to *playerId* whatever is found in *message* and
+// flushes the output.
+void GameAPI_playerWrite(int playerId, const char* message);
+
+// Reads a single line from playerId's redirected stdout.
+// This is thread safe as long as a single player does not
+// have multiple threads acting on it.
+// Returns:
+// 		char* - a single line of input from the player
+char* GameAPI_playerRead(int playerId);
+
+// Starts a timeout on *playerId*, blocking until the player's
+// timeout limit is each or the player process returns input.
+// Returns:
+// 		PLAYER_ERROR
+// 			- INNOCENT when the player returns input before the
+// 			  timeout is reached
+// 			- TIMEOUT when the timeout is reach before the player
+// 			  returns any input
+// 			- OUT_OF_RANGE when *playerId* is not in the range of
+// 			  [0, playerCount)
+// 			- OTHER when select() failed
+PLAYER_ERROR GameAPI_playerStartTimeout(int playerId);
+
+// Changes the player's score by *change* amount.
+// Returns:
+// 		int - the new score of the player
+int GameAPI_playerChangeScoreBy(int playerId, int change);
+
+// Sets the player's score to the amount specified by *newScore*
+// Returns:
+// 		int - the new score of the player
+int GameAPI_playerSetScoreTo(int playerId, int newScore);
+
+// Sets the error member of a player to error.
+void GameAPI_playerThrowError(int playerId, PLAYER_ERROR error);
+
+// Removes a player from player and decrements the playerCount by one.
+// Returns:
+// 		The new number of players
+int GameAPI_playerRemove(int playerId);
+
+//
+typedef struct player_list_t {
+	int playerCount;
+	player_t* players;
+} player_list_t;
+
+int GameAPI_initProcess(char* gameDirectory);
+
+const char* GameAPI_playerGetName(int playerId);
+
+void GameAPI_playerBatchWrite(const char* data);
+
+// Closes all player processes and frees all API-specific memory
+void GameAPI_killProcess();
+
+// Checks if a player process is running by checking the <in> and
+// <out> fields of player_t.
+int GameAPI_isPlayerRunning(int playerId);
+
+//------------------------------------------//
+//		Functions for Internal Use Only		//
+//------------------------------------------//
+
+// Forks a new process for a single player program listed in player_list.txt.
+int playerStart(player_t* player, char* executable, enum PROG_LANG language, const char* gameDirectory);
+
+// Kills a player process and frees all resources associated with the specified
+// player object.
+int playerKill(player_t* player);
+
+// Function that handles writing to, polling, and reading from
+// player processes.
+// Parameters:
+// 		_player:	a pointer to an initialized player struct
+// Returns:
+// 		NULL
+void *playerRunner(void *_player);
+
+void GameAPI_playerPrintStats(int playerId);
+
+#endif

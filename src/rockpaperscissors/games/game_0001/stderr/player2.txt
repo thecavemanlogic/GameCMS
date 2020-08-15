@@ -1,0 +1,1195 @@
+Traceback (most recent call last):
+  File "players/player2/code.py", line 12, in <module>
+    result = input()
+EOFError: EOF when reading a line
+ng for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER
+PAPERYou won
+Waiting for input...
+Rock, paper, scissors, shoot!
+PAPER

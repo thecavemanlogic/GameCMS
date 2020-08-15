@@ -1,0 +1,3 @@
+2
+0 players/player1/code.out player1
+2 players/player2/code.py player2
