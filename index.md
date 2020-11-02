@@ -1,7 +1,9 @@
 Reference link: [link text](reference)
 
+## Table of Contents
+
 {% for page in site.pages %}
-    <a href={{ page.filename }}>{{ page.title }}</a>
+    [{{ page.title }}] ({{ page.filename }})
 {% endfor %}
 
 ## Welcome to GitHub Pages
