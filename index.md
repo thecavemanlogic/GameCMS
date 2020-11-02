@@ -1,4 +1,4 @@
-Reference link: [link text](https://github.com/thecavemanlogic/GameCMS/reference)
+Reference link: [link text](reference.md)
 
 ## Welcome to GitHub Pages
 
