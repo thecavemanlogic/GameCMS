@@ -1,4 +1,4 @@
-Reference link: [link text](reference.md)
+Reference link: [link text](reference)
 
 {% for page in site.pages %}
     <a href={{ page.filename }}>{{ page.title }}</a>
