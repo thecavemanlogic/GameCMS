@@ -7,6 +7,7 @@ filename: reference.md
 
 The GameCMS library has ... functions that contest programs can call and use.
 
+---
 ### GameAPI_playerWrite
 ```c
 void GameAPI_playerWrite(int playerId, const char* message, int startTimeout);
@@ -19,7 +20,7 @@ Sends a message to a player process. If startTimeout is a non-zero value, then t
 #### Returns:
 Nothing
 
-
+---
 ### GameAPI_playerRead
 ```c
 char* GameAPI_playerRead(int playerId);
@@ -30,7 +31,7 @@ Read a line from the a player's stdout. This function is not thread-safe.
 #### Returns:
 the line of the output, NULL on failure
 
-
+---
 ### GameAPI_playerStartTimeout
 ```c
 PLAYER_ERROR GameAPI_playerStartTimeout(int playerId);
@@ -44,7 +45,7 @@ a PLAYER_ERROR:
 * TIMEOUT - the timeout expired before the player could send any output
 * OUT_OF_RANGE - playerId is not a valid player id
 
-
+---
 ### GameAPI_playerChangeScoreBy
 ```c
 int GameAPI_playerChangeScoreBy(int playerId, int change);
@@ -56,7 +57,7 @@ Changes a player's score by a certain amount
 #### Returns:
 the new player score
 
-
+---
 ### GameAPI_playerSetScoreTo
 ```c
 int GameAPI_playerSetScoreTo(int playerId, int newScore);
@@ -68,7 +69,7 @@ Sets a player's score to a certain amount.
 #### Returns:
 The new player score
 
-
+---
 ### GameAPI_playerGetScore
 ```c
 int GameAPI_playerGetScore(int playerId);
@@ -79,7 +80,7 @@ Returns the player's score
 #### Returns:
 The score of the player
 
-
+---
 ### GameAPI_playerAddPenalty
 ```c
 int GameAPI_playerAddPenalty(int playerId, int penalty);
@@ -91,7 +92,7 @@ Adds a penalty score to a player.
 #### Returns:
 The new penalty of the player
 
-
+---
 ### GameAPI_playerThrowError
 ```c
 void GameAPI_playerThrowError(int playerId, PLAYER_ERROR error);
@@ -103,7 +104,7 @@ Throws an error on a player.
 #### Returns:
 Nothing
 
-
+---
 ### GameAPI_initProcess
 ```c
 int GameAPI_initProcess();
@@ -114,7 +115,7 @@ None
 #### Returns:
 0 on success, -1 on failure
 
-
+---
 ### GameAPI_playerBatchWrite
 ```c
 void GameAPI_playerBatchWrite(const char* data, int startTimeout);
@@ -126,7 +127,7 @@ Writes some data to all active player processes.
 #### Returns:
 Nothing
 
-
+---
 ### GameAPI_killProcess
 ```c
 void GameAPI_killProcess();
@@ -137,7 +138,7 @@ None
 #### Returns:
 Nothing
 
-
+---
 ### GameAPI_isPlayerRunning
 ```c
 int GameAPI_isPlayerRunning(int playerId);
