@@ -1,3 +1,7 @@
+---
+title: This will be used as the title-tag of the page head
+---
+
 ## GameCMS Reference
 
 The GameCMS library has ... functions that contest programs can call and use.
