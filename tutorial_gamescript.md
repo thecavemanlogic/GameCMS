@@ -1,3 +1,8 @@
+---
+title: How to Create a Game Script
+filename: reference.md
+---
+
 [Home](index.md) / [Tutorials](tutorials.md) / How to Create a Game Script
 
 # How to Create a Game Script
