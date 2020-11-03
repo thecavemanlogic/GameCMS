@@ -1,3 +1,8 @@
+---
+title: Setting Up GameCMS
+filename: setup.md
+---
+
 [Home](index.md) / Setting Up GameCMS
 
 # Setting Up GameCMS on Your Own Machine
