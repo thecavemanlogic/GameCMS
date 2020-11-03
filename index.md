@@ -3,6 +3,9 @@ GameCMS (short for Game Content Management System) is a framework for creating a
 
 ## Getting Started
 
+### [Set up GameCMS](setup)
+Set up a GameCMS environment on your own machine.
+
 ### [Tutorials](tutorials)
 What's better than a tutorial? Nothing! So dive into a place of magic!
 
