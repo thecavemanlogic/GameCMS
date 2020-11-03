@@ -3,6 +3,8 @@ title: Documentation - GameCMS
 filename: reference.md
 ---
 
+[Home](index) / Documentation
+
 ## GameCMS Reference
 
 The GameCMS library has ... functions that contest programs can call and use.
