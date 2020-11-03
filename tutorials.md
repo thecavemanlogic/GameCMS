@@ -3,6 +3,8 @@ title: Tutorials - GameCMS
 filename: tutorials.md
 ---
 
+[Home](index) / Tutorials
+
 # Tutorials
 
 ## [How to Run a Contest](tutorial_contest)
