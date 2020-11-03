@@ -1,4 +1,4 @@
-[Tutorials](tutorials) / How to Create a Game Script
+[Home](index.md) / [Tutorials](tutorials) / How to Create a Game Script
 
 # How to Create a Game Script
 
