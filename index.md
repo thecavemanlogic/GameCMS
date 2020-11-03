@@ -5,13 +5,13 @@ As of right now, the whole library (except for a few Bash scripts) is written in
 
 ## Getting Started
 
-### [Set up GameCMS](setup)
+### [Set up GameCMS](setup.md)
 Set up a GameCMS environment on your own machine.
 
-### [Tutorials](tutorials)
+### [Tutorials](tutorials.md)
 What's better than a tutorial? Nothing! So dive into a place of magic!
 
-### [Documentation](reference)
+### [Documentation](reference.md)
 Read about all the functions that you can use in contest scripts
 
 ## Futuer Plans for GameCMS
