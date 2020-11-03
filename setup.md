@@ -1,4 +1,4 @@
-[Home](index) / Setting Up GameCMS
+[Home](index.md) / Setting Up GameCMS
 
 # Setting Up GameCMS on Your Own Machine
 
