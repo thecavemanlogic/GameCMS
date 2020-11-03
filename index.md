@@ -1,10 +1,15 @@
-Reference link: [link text](reference)
+GameCMS (short for Game Content Management System) is a framework for creating and managing programming competitions.
 
 ## Table of Contents
 
-{% for page in site.pages %}
-    [{{ page.title }}] ({{ page.filename }})
-{% endfor %}
+[Reference](reference)
+
+
+## Getting Started
+
+### Tutorials
+
+### Examples
 
 ## Welcome to GitHub Pages
 
