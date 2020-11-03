@@ -1,3 +1,8 @@
+---
+title: Tutorials - GameCMS
+filename: tutorials.md
+---
+
 # Tutorials
 
 ## [How to Run a Contest](tutorial_contest)
