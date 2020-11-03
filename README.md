@@ -1,6 +1,6 @@
 # GameCMS
 
-An open source content management system.
+An open source contest management system.
 
 Inspired by CodinGame (https://www.codingame.com/)
 
