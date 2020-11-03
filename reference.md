@@ -1,5 +1,5 @@
 ---
-title: GameCMS
+title: Documentation - GameCMS
 filename: reference.md
 ---
 
