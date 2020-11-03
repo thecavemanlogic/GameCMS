@@ -1,7 +1,7 @@
 Home
 
 ## What is GameCMS?
-GameCMS (short for Game Content Management System) is a framework for creating and managing programming competitions. Inspired by competions where programs compete in real time, GameCMS was made to be fast and flexible. GameCMS is heavily inspired by [CodinGame](https://www.codingame.com/) and MIT's [Battlecode](https://battlecode.org/).
+GameCMS (short for Game Contest Management System) is a framework for creating and managing programming competitions. Inspired by competions where programs compete in real time, GameCMS was made to be fast and flexible. GameCMS is heavily inspired by [CodinGame](https://www.codingame.com/) and MIT's [Battlecode](https://battlecode.org/).
 
 As of right now, the whole library (except for a few Bash scripts) is written in C. Although this may ensure a fast application in some cases, this most likely makes it unsecure.
 
