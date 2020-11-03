@@ -19,4 +19,3 @@ The GameCMS library is not even close to being finished! There are many fixes an
 
 * Replace the built-in "database" with [MySQL](https://www.mysql.com/) or [SQLite](https://www.sqlite.org/index.html) implementations.
 * Rewrite the webserver in Python using the [Flask](https://flask.palletsprojects.com/en/1.1.x/) web framework.
-* 
