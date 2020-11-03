@@ -14,7 +14,8 @@ sudo apt-get install libbsd-dev
 sudo apt-get install gcc
 ```
 
-Next, clone the repository by typing ```git clone https://github.com/thecavemanlogic/GameCMS.git``` in a shell.
+Next, clone the repository by typing the following into a shell:
+```git clone https://github.com/thecavemanlogic/GameCMS.git```
 
 Move into the ```src``` directory by executing ```mkdir GameCMS/src``` and then build the program by executing ```make```.
 
