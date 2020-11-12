@@ -13,6 +13,7 @@ GameCMS was orginilly built on top of an Ubuntu distro for Window's Subsystem fo
 * GNU C Compiler
 
 If you are unsure if you have these dependencies installed, execute the following commands in a shell:
+
 ```bash
 sudo apt-get install libssl-dev   # OpenSSL library
 sudo apt-get install libbsd-dev   # BSD string library
@@ -20,6 +21,7 @@ sudo apt-get install gcc          # GNU C Compiler
 ```
 
 Next, clone the repository by typing the following into a shell:
+
 ```git clone https://github.com/thecavemanlogic/GameCMS.git```
 
 Move into the ```src``` directory by executing ```mkdir GameCMS/src``` and then build the program by executing ```make```.
