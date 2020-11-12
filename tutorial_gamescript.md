@@ -23,48 +23,48 @@ Thankfully, creating a game script is very simple. There are less than 20 functi
 
 3. In order to make the building process easier, let's create a make file called ```Makefile```. In that file, copy and paste in the text below:
 
-```make
-CFLAGS = -Wall -Wextra -Werror
+	```make
+	CFLAGS = -Wall -Wextra -Werror
 
-file: script.c libgame_api.so
-	gcc $(CFLAGS) rockpaperscissors.c -L. -lgame_api -o rockpaperscissors
-```
+	file: script.c libgame_api.so
+		gcc $(CFLAGS) rockpaperscissors.c -L. -lgame_api -o rockpaperscissors
+	```
 
-This will hide the complex command for us. Now, all we have to do is call ```make``` in a shell in order to build our game script.
+	This will hide the complex command for us. Now, all we have to do is call ```make``` in a shell in order to build our game script.
 
 4. Create a new file called ```rockpaperscissors.c``` and copy and past the following into that file:
 
-```c
+	```c
 
-#include <string.h>
-#include <stdlib.h>
+	#include <string.h>
+	#include <stdlib.h>
 
-#include "game_api.h"
+	#include "game_api.h"
 
-// Transform a string into the correct numerical value
-int strToInt(const char* str) {
-	if (strcmp(str, "ROCK") == 0) return 0;
-	else if (strcmp(str, "PAPER") == 0) return 1;
-	else if (strcmp(str, "SCISSORS") == 0) return 2;
-	else return -1;
-}
-
-int main(int argc, char** argv) {
-	int p = GameAPI_initProcess(argv[1]);
-
-	// Make sure we only have 2 players
-	if (p != 2) {
-		printf("Can only support 2 players!\n");
-		exit(1);
+	// Transform a string into the correct numerical value
+	int strToInt(const char* str) {
+		if (strcmp(str, "ROCK") == 0) return 0;
+		else if (strcmp(str, "PAPER") == 0) return 1;
+		else if (strcmp(str, "SCISSORS") == 0) return 2;
+		else return -1;
 	}
 
-	/* Body of game script goes here */
+	int main(int argc, char** argv) {
+		int p = GameAPI_initProcess(argv[1]);
 
-	GameAPI_killProcess();
-	
-	return 1;
-}
-```
+		// Make sure we only have 2 players
+		if (p != 2) {
+			printf("Can only support 2 players!\n");
+			exit(1);
+		}
+
+		/* Body of game script goes here */
+
+		GameAPI_killProcess();
+
+		return 1;
+	}
+	```
 
 This is the basic template for a game script. ```GameAPI_initProcess()``` is the first function we should call in our program. This will initialize the player scripts for us along with other important information.
 
