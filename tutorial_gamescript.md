@@ -22,13 +22,13 @@ Thankfully, creating a game script is very simple. There are less than 20 functi
 2. Next, you will need to create a new source file in your language of choice. The language you choose is important! It must be able to load a C library file and call those functions. This tutorial will write the game script in C, which is what GameCMS is written in. If you want to create a game script in another language, first make sure the language supports interoperability with C libraries and load the library into your program.
 
 3. In order to make the building process easier, let's create a make file called ```Makefile```. In that file, copy and paste in the text below:
+
 ```make
 
 CFLAGS = -Wall -Wextra -Werror
 
 file: script.c libgame_api.so
 	gcc $(CFLAGS) script.c -L. -lgame_api -o script
-
 ```
 
 This will hide the complex command for us. Now, all we have to do is call ```make``` in a shell in order to build our game script.
