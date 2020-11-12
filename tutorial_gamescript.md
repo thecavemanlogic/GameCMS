@@ -35,7 +35,6 @@ Thankfully, creating a game script is very simple. There are less than 20 functi
 4. Create a new file called ```rockpaperscissors.c``` and copy and past the following into that file:
 
 	```c
-
 	#include <string.h>
 	#include <stdlib.h>
 
@@ -66,137 +65,137 @@ Thankfully, creating a game script is very simple. There are less than 20 functi
 	}
 	```
 
-This is the basic template for a game script. ```GameAPI_initProcess()``` is the first function we should call in our program. This will initialize the player scripts for us along with other important information.
+	This is the basic template for a game script. ```GameAPI_initProcess()``` is the first function we should call in our program. This will initialize the player scripts for us along with other important information.
 
-The conditional ```if (p != 2) { ... }``` checks if there are only two players present. If there are more or less than two players, then the program will throw an error because a game of rock, paper, scissors can only have 2 players.
+	The conditional ```if (p != 2) { ... }``` checks if there are only two players present. If there are more or less than two players, then the program will throw an error because a game of rock, paper, scissors can only have 2 players.
 
-```GameAPI_killProcess()``` terminates player scripts and cleans up any allocations that took place while we were running our game.
+	```GameAPI_killProcess()``` terminates player scripts and cleans up any allocations that took place while we were running our game.
 
 5. The next part for initializing our game is to open a replay file. Replay files are binary files that contain enough information about the internal state of the game to create a visual representation of what was going on during a game. For rock, paper, scissors we can use this information to animate two hands that perform the moves of the game.
 
-```c
-// Initialize the replay file
-GameAPI_openReplay("rockpaperscissors");
+	```c
+	// Initialize the replay file
+	GameAPI_openReplay("rockpaperscissors");
 
-// Notify that we are starting the game
-printf("Starting the game\n");
-```
+	// Notify that we are starting the game
+	printf("Starting the game\n");
+	```
 
-The ```GameAPI_openReplay()``` call opens a new replay file called ```rockpaperscissors``` and prepares it for writing. The ```printf()``` function is used to notify the admininistrator that a game is starting (mainly for debugging reasons).
+	The ```GameAPI_openReplay()``` call opens a new replay file called ```rockpaperscissors``` and prepares it for writing. The ```printf()``` function is used to notify the admininistrator that a game is starting (mainly for debugging reasons).
 
 6. Next, add the following code under what you pasted in step 5.
 
-```c
-// Run 300 games
-for (int i = 0; i < 30; ++i) {
+	```c
+	// Run 300 games
+	for (int i = 0; i < 30; ++i) {
 
-	// Signal the players we are ready for input
-	GameAPI_playerBatchWrite("Rock, paper, scissors, shoot!\n", 1);
+		// Signal the players we are ready for input
+		GameAPI_playerBatchWrite("Rock, paper, scissors, shoot!\n", 1);
 
-	// Read the inputs for both players
-	char *p1s = GameAPI_playerRead(0);
-	char *p2s = GameAPI_playerRead(1);
+		// Read the inputs for both players
+		char *p1s = GameAPI_playerRead(0);
+		char *p2s = GameAPI_playerRead(1);
 
-	// Make sure both players didn't time out
-	if (!p1s) {
-		printf("P1 timed out\n");
-		GameAPI_playerSetScoreTo(0, 0);
-		break;
+		// Make sure both players didn't time out
+		if (!p1s) {
+			printf("P1 timed out\n");
+			GameAPI_playerSetScoreTo(0, 0);
+			break;
+		}
+		if (!p2s) {
+			printf("P2 timed out\n");
+			GameAPI_playerSetScoreTo(1, 0);
+			break;
+		}
+
+		/* Rest of for loop goes here */
+
 	}
-	if (!p2s) {
-		printf("P2 timed out\n");
-		GameAPI_playerSetScoreTo(1, 0);
-		break;
-	}
+	```
 
-	/* Rest of for loop goes here */
+	For our purposes, a single game of rock, paper, scissors will consist of 30 rounds. Whoever wins the most rounds will declared the winner.
 
-}
-```
+	The ```GameAPI_playerBatchWrite()``` call sends out the message ```"Rock, paper, scissors, shoot!\n"``` to all processes involved in the game.
 
-For our purposes, a single game of rock, paper, scissors will consist of 30 rounds. Whoever wins the most rounds will declared the winner.
-
-The ```GameAPI_playerBatchWrite()``` call sends out the message ```"Rock, paper, scissors, shoot!\n"``` to all processes involved in the game.
-
-The next two lines deal with getting input from the player processes by using ```GameAPI_playerRead()```. After both player inputs are received, they are checked in the next two if statements to make sure that they are valid.
+	The next two lines deal with getting input from the player processes by using ```GameAPI_playerRead()```. After both player inputs are received, they are checked in the next two if statements to make sure that they are valid.
 
 7. Now, we need to take those user inputs and transform them into readable information that we can use. Copy and paste the following below what you did in step 6:
 
-```c
-// Remove the newline character from the player's output
-p1s[strlen(p1s) - 1] = '\0';
-p2s[strlen(p2s) - 1] = '\0';
+	```c
+	// Remove the newline character from the player's output
+	p1s[strlen(p1s) - 1] = '\0';
+	p2s[strlen(p2s) - 1] = '\0';
 
-// Log the player's responses
-printf("%s vs. %s\t", p1s, p2s);
+	// Log the player's responses
+	printf("%s vs. %s\t", p1s, p2s);
 
-// Transform the outputs to numerical values
-int p1 = strToInt(p1s);
-int p2 = strToInt(p2s);
+	// Transform the outputs to numerical values
+	int p1 = strToInt(p1s);
+	int p2 = strToInt(p2s);
 
-// Make sure both players are still running
-if (!GameAPI_isPlayerRunning(0)) {
-	printf("Early exit... player 2 won\n");
-	exit(0);
-}
-if (!GameAPI_isPlayerRunning(1)) {
-	printf("Early exit... player 1 won\n");
-	exit(0);
-}
-```
+	// Make sure both players are still running
+	if (!GameAPI_isPlayerRunning(0)) {
+		printf("Early exit... player 2 won\n");
+		exit(0);
+	}
+	if (!GameAPI_isPlayerRunning(1)) {
+		printf("Early exit... player 1 won\n");
+		exit(0);
+	}
+	```
 
-The first two lines in this listing are removing newline characters from the user inputs (GameCMS does not take care of this yet). On the next line, ```printf()``` is used for more debugging purposes.
+	The first two lines in this listing are removing newline characters from the user inputs (GameCMS does not take care of this yet). On the next line, ```printf()``` is used for more debugging purposes.
 
-On the two lines with the ```strtoInt()``` function call, these transform the string input into a numerical representation that is easier to perform calculations on.
+	On the two lines with the ```strtoInt()``` function call, these transform the string input into a numerical representation that is easier to perform calculations on.
 
-Lastly, the last two if statements check if either player process is still running. If one of them stops, then the other player is declared the winner and the game process stops.
+	Lastly, the last two if statements check if either player process is still running. If one of them stops, then the other player is declared the winner and the game process stops.
 
 8. The next step in making a game is to decide who won and record those results. To do so, copy and past the code below under what you pasted in step 7.
 
-```c
-unsigned char replayValue[3];
-replayValue[0] = p1;
-replayValue[1] = p2;
+	```c
+	unsigned char replayValue[3];
+	replayValue[0] = p1;
+	replayValue[1] = p2;
 
-// If both players performed the same action
-if (p1 == p2) {
-	puts("Tie");
-	GameAPI_playerBatchWrite("Tie\n", 0);
-	replayValue[2] = 0b00;
-}
-else if (p1 == p2 - 1 || p1 == p2 + 2) {
-	puts("Player 2 won");
-	GameAPI_playerWrite(0, "You lost\n", 0);
-	GameAPI_playerWrite(1, "You won\n", 0);
-	GameAPI_playerChangeScoreBy(1, 1);
-	replayValue[2] = 0b10;
-}
-else {
-	puts("Player 1 won");
-	GameAPI_playerWrite(0, "You won\n", 0);
-	GameAPI_playerWrite(1, "You lost\n", 0);
-	GameAPI_playerChangeScoreBy(0, 1);
-	replayValue[2] = 0b01;
-}
+	// If both players performed the same action
+	if (p1 == p2) {
+		puts("Tie");
+		GameAPI_playerBatchWrite("Tie\n", 0);
+		replayValue[2] = 0b00;
+	}
+	else if (p1 == p2 - 1 || p1 == p2 + 2) {
+		puts("Player 2 won");
+		GameAPI_playerWrite(0, "You lost\n", 0);
+		GameAPI_playerWrite(1, "You won\n", 0);
+		GameAPI_playerChangeScoreBy(1, 1);
+		replayValue[2] = 0b10;
+	}
+	else {
+		puts("Player 1 won");
+		GameAPI_playerWrite(0, "You won\n", 0);
+		GameAPI_playerWrite(1, "You lost\n", 0);
+		GameAPI_playerChangeScoreBy(0, 1);
+		replayValue[2] = 0b01;
+	}
 
-GameAPI_replayWrite(replayValue, sizeof(replayValue));
-GameAPI_replayPushFrame();
+	GameAPI_replayWrite(replayValue, sizeof(replayValue));
+	GameAPI_replayPushFrame();
 
-fflush(stdout);
-```
+	fflush(stdout);
+	```
 
-First an ```unsigned char``` array named ```replayValue``` is declared. This array will hold the output of the first player, the output of the second player, and the winner of the round in the order.
+	First an ```unsigned char``` array named ```replayValue``` is declared. This array will hold the output of the first player, the output of the second player, and the winner of the round in the order.
 
-The next block now works out the actual logic of the game:
-* Players who win the round will have their score incremented by one.
-* If both players choose the same action (like both choose rock), then no one gets a point and the next round is played.
-* The winner of the round is recorded in the last entry of the ```replayValue``` array.
+	The next block now works out the actual logic of the game:
+	* Players who win the round will have their score incremented by one.
+	* If both players choose the same action (like both choose rock), then no one gets a point and the next round is played.
+	* The winner of the round is recorded in the last entry of the ```replayValue``` array.
 
-The last three lines of the code sample write the array to the replay file and then flush the data so no information is lost.
+	The last three lines of the code sample write the array to the replay file and then flush the data so no information is lost.
 
 9. We are now done with writing the code. All that needs to be done now is building the game script. Just call ```make``` in a shell in the same directory as the game file and you will be finished. You should see something like the image below:
 
-![Screenshot of make command](screenshot.png)
+	![Screenshot of make command](screenshot.png)
 
 ## Conclusion
 
