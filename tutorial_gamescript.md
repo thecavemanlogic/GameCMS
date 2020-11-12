@@ -27,12 +27,12 @@ Thankfully, creating a game script is very simple. There are less than 20 functi
 CFLAGS = -Wall -Wextra -Werror
 
 file: script.c libgame_api.so
-	gcc $(CFLAGS) script.c -L. -lgame_api -o script
+	gcc $(CFLAGS) rockpaperscissors.c -L. -lgame_api -o rockpaperscissors
 ```
 
 This will hide the complex command for us. Now, all we have to do is call ```make``` in a shell in order to build our game script.
 
-4. Create a new file called ```script.c``` and copy and past the following into that file:
+4. Create a new file called ```rockpaperscissors.c``` and copy and past the following into that file:
 
 ```c
 
@@ -194,7 +194,9 @@ The next block now works out the actual logic of the game:
 
 The last three lines of the code sample write the array to the replay file and then flush the data so no information is lost.
 
-9. We are now done with writing the code. All that needs to be done now is building the game script. Just call ```make``` in a shell in the same directory as the game file and you will be finished.
+9. We are now done with writing the code. All that needs to be done now is building the game script. Just call ```make``` in a shell in the same directory as the game file and you will be finished. You should see something like the image below:
+
+![Screenshot of make command](screenshot.png)
 
 ## Conclusion
 
