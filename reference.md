@@ -7,7 +7,7 @@ filename: reference.md
 
 ## GameCMS Reference
 
-The GameCMS library has ... functions that contest programs can call and use.
+The GameCMS library has several functions to help with writing game scripts. These functions mainly deal with writing output to player programs, reading input from player programs, and manipulating player variables.
 
 ---
 ### GameAPI_playerWrite
@@ -150,13 +150,3 @@ Checks if a player is active
 * playerId - the id of the player to check the activity status of
 #### Returns:
 1 if the player is running, 0 if the player is not
-
-
-###
-```c
-
-```
-
-#### Parameters:
-* 
-#### Returns:
