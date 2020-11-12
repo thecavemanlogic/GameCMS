@@ -26,6 +26,6 @@ Next, clone the repository by typing the following into a shell:
 
 Move into the ```src``` directory by executing ```mkdir GameCMS/src``` and then build the program by executing ```make```.
 
-If the program built sucessfully, make will return no errors after ran. You can also perform a test contest by executing ```./test.sh``` in the shell. This script creates a temporary directory to host the contest and then runs the contest in that directory.
+If the program built sucessfully, make will not print any errors. You can also perform a test contest by executing ```./test.sh``` in the shell. This script creates a temporary directory to host a contest and to run a contest.
 
-GameCMS should now be successfully installed on your machine. You can review the source code, tweak it how you like, and then whatever else you feel like!
+GameCMS is now successfully installed on your machine. You can review the source code, tweak it how you like, and then whatever else you feel like doing with it!
