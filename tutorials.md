@@ -11,4 +11,4 @@ filename: tutorials.md
 Learn how to run a contest.
 
 ## [How to Create a Game Script](tutorial_gamescript.md)
-Learn how to create a game script. For this tutorial you will learn how to create a basic Rock, Paper, Scissors game.
+Learn how to create a simple game script. For this tutorial you will learn how to create a basic Rock, Paper, Scissors game.
