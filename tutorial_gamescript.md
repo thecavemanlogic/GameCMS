@@ -24,7 +24,6 @@ Thankfully, creating a game script is very simple. There are less than 20 functi
 3. In order to make the building process easier, let's create a make file called ```Makefile```. In that file, copy and paste in the text below:
 
 ```make
-
 CFLAGS = -Wall -Wextra -Werror
 
 file: script.c libgame_api.so
@@ -123,7 +122,7 @@ The next two lines deal with getting input from the player processes by using ``
 
 7. Now, we need to take those user inputs and transform them into readable information that we can use. Copy and paste the following below what you did in step 6:
 
-```
+```c
 // Remove the newline character from the player's output
 p1s[strlen(p1s) - 1] = '\0';
 p2s[strlen(p2s) - 1] = '\0';
